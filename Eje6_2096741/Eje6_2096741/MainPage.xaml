@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Eje6_2096741.MainPage">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="MyEntryStyle" TargetType="Entry">
+                <Style.Triggers>
+                    <Trigger TargetType="Entry" Property="IsFocused"
+                             Value="True">
+                        <Setter Property="TextColor" Value="Red" />
+                        <Setter Property="FontSize" Value="30" />
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <StackLayout VerticalOptions="Center">
+        <Entry Text="Primero" Style="{StaticResource MyEntryStyle}"/>
+        <Entry Text="Segundo" Style="{StaticResource MyEntryStyle}"/>
+        <Entry Text="Tercero" Style="{StaticResource MyEntryStyle}"/>
+        
+    </StackLayout>
+
+    
+</ContentPage>
+
